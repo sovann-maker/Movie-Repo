@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+header,
+footer,
+aside {
+    display: block;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+label {
+    width: 450px;
+    display: block;
+}
+
+input {
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+select {
+    width: 200px;
+    border-radius: 5px;
+}
+
+table {
+    width: 460px;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+th {
+    background: #0a0a0a;
+    border: 2px solid rgb(10, 10, 10);
+    padding: 10px;
+    color: white;
+}
+
+td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.headerbar {
+    width: 1000px;
+    float: left;
+}
+
+.headerbar.top {
+    background: #003333;
+    min-height: 100px;
+}
+
+.headerbar.bottom {
+    background: #333300;
+    min-height: 60px;
+}
+
+.leftbar {
+    width: 500px;
+    background: #3dc9f0;
+    min-height: 820px;
+    float: left;
+}
+
+.rightbar {
+    width: 480px;
+    background: #f3f3f5;
+    min-height: 800px;
+    float: left;
+    padding: 10px;
+}

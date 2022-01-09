@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Style/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="headerbar top">
+            <h1>Movies Repository</h1>
+        </header>
+        <aside class="leftbar">
+            <div>
+                <fieldset>
+                    <label for="moviename">Movie Name</label>
+                    <input type="text" placeholder="Enter the movie name" id="movieName">
+                </fieldset>
+                <fieldset>
+                    <label for="releasedate">Release Date</label>
+                    <input type="date" placeholder="Enter the release date" id="releaseDate">
+                </fieldset>
+                <fieldset>
+                    <label for="movierating">Movie Rating </label>
+                    <input type="number" placeholder="Enter the movie rating" id="movieRating">
+                </fieldset>
+                <fieldset>
+                    <label for="filmindustry">Film Industry</label>
+                    <select id="film industry">
+                        <option value="Hollywood">Hollywood</option>
+                        <option value="Bollywood">Bollywood</option>
+                        <option value="Cinema of China">Cinema of China</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Cinema of Japan">Cinema of Japan(Nihon Eiga)</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="submit">&nbsp;</label>
+                    <button id="submit" onclick="onInsertRecord()">InsertRecord</button>
+                    <button id="submit" onclick="onInsertRecord()">EditRecord</button>
+                    <button id="submit" onclick="onInsertRecord()">DeleteRecord</button>
+                    <button id="submit" onclick="onInsertRecord()">FindAllRecord</button>
+                </fieldset>
+            </div>
+        </aside>
+        <aside class="rightbar">
+            <table id="regtable">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Release Date</th>
+                        <th>Movie Rating</th>
+                        <th>Film Industry</th>
+                    </tr>
+                </thead>
+
+            </table>
+        </aside>
+        <footer class="headerbar bottom"></footer>
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
