@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css " integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="
+        anonymous " referrerpolicy="no-referrer " />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+
+<body onload="init()" class="l-form">
+    <div class="container">
+        <header class="headerbar top">
+            <h1>Mini Project</h1>
+        </header>
+        <aside class="leftbar">
+            <div class="l-form">
+                <form action="" class="form">
+                    <h1 class="form__title"><i class="fas fa-film"></i> Movies Repository</h1>
+
+                    <div class="form__div">
+                        <input type="text" class="form__input" placeholder=" " id="moviename">
+                        <label for="moviename" class="form__label">Movie Name</label>
+                    </div>
+
+                    <div class="form__div">
+                        <input type="float" class="form__input" placeholder=" " id="movierating">
+                        <label for="movierating" class="form__label">Movie Rating</label>
+
+                    </div>
+                    <div class="form__div">
+                        <input type="date" class="form__input" placeholder=" " id="releasedate">
+                        <label for="releasedate" class="form__label">Release Date</label>
+
+                    </div>
+                    <div class="form__div">
+                        <select id="filmindustry" class="form__input">
+                    <option value="Hollywood">Hollywood</option>
+                    <option value="Bollywood">Bollywood</option>
+                    <option value="Cinema of China">Cinema of China</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Cinema of Japan">Cinema of Japan(Nihon Eiga)</option>
+                </select>
+                    </div>
+                    <button id="submit" onclick="onInsertRecord()" class="form__button">Insert <i class="fas fa-plus-square"></i></button>
+                </form>
+            </div>
+        </aside>
+        <aside class="rightbar">
+            <table id="getTable" class="tableform">
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Movie Rating</th>
+                        <th>Release Date</th>
+                        <th>Film Industry</th>
+                        <th>Action </th>
+                    </tr>
+                </thead>
+                <tbody id="tablerows"></tbody>
+            </table>
+        </aside>
+
+        <footer class="footer">
+            <h3>Follow us</h3>
+            <ul class="social">
+                <a href="#" style="color:white;"><i class="fab fa-youtube"></i></a>
+                <a href="#" style="color:white;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color:white;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color:white"><i class="fab fa-instagram "></i></a>
+                <div style="color:white"> &copyright 2022 Mini_Project</div>
+            </ul>
+        </footer>
+    </div>
+
+    <script src='js/index.js'></script>
+</body>
+
+</html>

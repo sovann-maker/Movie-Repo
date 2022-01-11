@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onload="init()">
     <div class="container">
         <header class="headerbar top">
             <h1>Movies Repository</h1>
@@ -19,19 +19,19 @@
             <div>
                 <fieldset>
                     <label for="moviename">Movie Name</label>
-                    <input type="text" placeholder="Enter the movie name" id="movieName">
+                    <input type="text" placeholder="Enter the movie name" id="moviename">
                 </fieldset>
                 <fieldset>
                     <label for="releasedate">Release Date</label>
-                    <input type="date" placeholder="Enter the release date" id="releaseDate">
+                    <input type="date" placeholder="Enter the release date" id="releasedate">
                 </fieldset>
                 <fieldset>
                     <label for="movierating">Movie Rating </label>
-                    <input type="number" placeholder="Enter the movie rating" id="movieRating">
+                    <input type="number" placeholder="Enter the movie rating" id="movierating">
                 </fieldset>
                 <fieldset>
                     <label for="filmindustry">Film Industry</label>
-                    <select id="film industry">
+                    <select id="filmindustry">
                         <option value="Hollywood">Hollywood</option>
                         <option value="Bollywood">Bollywood</option>
                         <option value="Cinema of China">Cinema of China</option>
@@ -41,28 +41,27 @@
                 </fieldset>
                 <fieldset>
                     <label for="submit">&nbsp;</label>
-                    <button id="submit" onclick="onInsertRecord()">InsertRecord</button>
-                    <button id="submit" onclick="onInsertRecord()">EditRecord</button>
-                    <button id="submit" onclick="onInsertRecord()">DeleteRecord</button>
-                    <button id="submit" onclick="onInsertRecord()">FindAllRecord</button>
+                    <button id="submit" onclick="onInsertRecord()">Insert Record</button>
                 </fieldset>
             </div>
         </aside>
         <aside class="rightbar">
-            <table id="regtable">
+            <table id="getTable">
                 <thead>
                     <tr>
                         <th>Movie Name</th>
                         <th>Release Date</th>
                         <th>Movie Rating</th>
                         <th>Film Industry</th>
+                        <th>Action </th>
                     </tr>
                 </thead>
+                <tbody id="tablerows">
 
+                </tbody>
             </table>
         </aside>
         <footer class="headerbar bottom"></footer>
-
     </div>
     <script src="js/index.js"></script>
 </body>
