@@ -81,3 +81,19 @@ function onEditRecord(index) {
     document.getElementById("submit").innerHTML = "Update"; //when edit is clicked the insert record will be changed to Update 
 
 }
+const searchFunction = () => {
+    let filter = document.getElementById('myInput').value.toUpperCase();
+    let tablerows = document.getElementById('tablerows');
+    let tr = tablerows.getElementsByTagName('tr');
+    for(var i=0; i<tr.length; i++){
+        let td = tr[i].getElementsByTagName('td')[0];
+        if(td) {
+            let textvalue = td.textContent || td.innerHTML;
+            if(textvalue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            }else{
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
